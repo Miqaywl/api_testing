@@ -24,7 +24,7 @@ Before you get started, ensure you have the following prerequisites:
 
 ## Installation
 
-git clone https://github.com/yourusername/reqres-api-automation.git
+git clone https://github.com/Miqaywl/reqres-api-automation.git
 
 cd reqres-api-automation
 
