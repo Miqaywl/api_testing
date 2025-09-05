@@ -4,7 +4,7 @@ import os
 from pathlib import Path
 import requests
 
-# ---- Logging setup ----
+
 def setup_logger(name="api_test", level=logging.DEBUG):
     logger = logging.getLogger(name)
     if not logger.handlers:
@@ -18,14 +18,14 @@ def setup_logger(name="api_test", level=logging.DEBUG):
     return logger
 
 
-# ---- JSON loader ----
+
 def load_json(file_path):
     """Load test data from JSON file."""
     with open(file_path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-# ---- Response helper ----
+
 def pretty_print_response(response: requests.Response):
     """Print status code + response body in a nice format (for debugging)."""
     print(f"\nSTATUS: {response.status_code}")
@@ -35,7 +35,7 @@ def pretty_print_response(response: requests.Response):
         print(response.text)
 
 
-# ---- Assertion helper ----
+
 def assert_status_code(response, expected_code=200):
     """Check if response status matches expected."""
     assert response.status_code == expected_code, (
