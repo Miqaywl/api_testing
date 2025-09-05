@@ -1,0 +1,46 @@
+{
+  "valid_cities": [
+    {
+      "name": "London",
+      "country": "GB"
+    },
+    {
+      "name": "New York",
+      "country": "US"
+    },
+    {
+      "name": "Yerevan",
+      "country": "AM"
+    },
+
+    {"name": "London", "country": "GB"},
+    {"name": "New York", "country": "US"},
+    {"name": "Yerevan", "country": "AM"},
+    {"name": "São Paulo", "country": "BR"},
+    {"name": "Tokyo", "country": "JP"},
+    {"name": "Sydney", "country": "AU"},
+    {"name": "Cape Town", "country": "ZA"}
+  ],
+  "invalid_cities": [
+    {
+      "name": "NoSuchCity123",
+      "expected_status": 404
+    },
+    {
+      "name": "NoSuchCity123", "expected_status": 404
+    },
+    {
+      "name": "!!!@@@", "expected_status": 404
+    },
+    {
+      "name": "", "expected_status": 400
+    }
+  ],
+  "expected_fields": [
+    "weather",
+    "main",
+    "wind",
+    "sys",
+    "name"
+  ]
+}
