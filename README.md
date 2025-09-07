@@ -24,7 +24,7 @@ Before you get started, ensure you have the following prerequisites:
 
 ## Installation
 
-git clone https://github.com/README.md/api_testing
+git clone https://github.com/Miqaywl/api_testing
 
 cd reqres-api-automation
 
